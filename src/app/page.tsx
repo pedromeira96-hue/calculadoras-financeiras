@@ -26,21 +26,21 @@ const CALCULADORAS = [
     titulo: "Parcelado Sem Juros ou À Vista?",
     pergunta: "Qual é a taxa escondida do parcelamento?",
     emoji: "💳",
-    pronta: false,
+    pronta: true,
   },
   {
     href: "/calculadora/bola-de-neve-ou-cascata",
     titulo: "Bola de Neve ou Cascata?",
     pergunta: "Qual estratégia quita suas dívidas mais barato?",
     emoji: "❄️",
-    pronta: false,
+    pronta: true,
   },
   {
     href: "/calculadora/reserva-de-emergencia",
     titulo: "Reserva de Emergência",
     pergunta: "Quanto guardar e onde rende mais (CDI x poupança)?",
     emoji: "🛡️",
-    pronta: false,
+    pronta: true,
   },
 ];
 
