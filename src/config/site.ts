@@ -1,6 +1,6 @@
 export const SITE_NAME = "ContaDívida";
 
-export const SITE_URL = "https://contadivida.com.br";
+export const SITE_URL = "https://calculadoras-financeiras-sooty.vercel.app";
 
 export const SITE_DESCRIPTION =
   "Calculadoras de dívidas e finanças pessoais com metodologia aberta: quanto custa pagar o mínimo do cartão, atrasar boletos, quitar dívidas e onde render sua reserva de emergência.";
