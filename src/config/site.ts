@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION =
   "Calculadoras de dívidas e finanças pessoais com metodologia aberta: quanto custa pagar o mínimo do cartão, atrasar boletos, quitar dívidas e onde render sua reserva de emergência.";
 
 // TODO(operador): preencher com o nome real antes do lançamento — E-E-A-T exige autor identificável.
-export const AUTHOR_NAME = "Seu Nome";
+export const AUTHOR_NAME = "Pedro Henrique";
 
 // Ferramenta destacada no hero "Viu no TikTok?" (alterar conforme o vídeo da semana).
 export const CURRENT_FEATURE = "/calculadora/rotativo-do-cartao";
