@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 import {
   AUTHOR_NAME,
   DISCLAIMER_GERAL,
@@ -30,7 +32,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
+        <GoogleAnalytics />
+        <CookieBanner />
         <header className="border-b border-slate-200 bg-white">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
             <Link href="/" className="text-xl font-bold tracking-tight text-emerald-700">
@@ -60,6 +68,13 @@ export default function RootLayout({
             <p className="text-xs leading-relaxed text-slate-400">
               {DISCLAIMER_GERAL} Autor: {AUTHOR_NAME}. Consulte sempre as regras do seu contrato
               e, em caso de dúvida, o Banco Central do Brasil (bacen.gov.br).
+            </p>
+            <p className="text-xs text-slate-400">
+              <a href="/politica-de-privacidade" className="underline hover:text-emerald-700">Política de Privacidade</a>
+              {" | "}
+              <a href="/termos" className="underline hover:text-emerald-700">Termos de Uso</a>
+              {" | "}
+              <a href="/metodologia" className="underline hover:text-emerald-700">Metodologia</a>
             </p>
           </div>
         </footer>
